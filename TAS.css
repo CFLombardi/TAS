@@ -1,0 +1,137 @@
+body {
+	background-color: black;
+}
+
+li
+{
+	padding: 10px;
+}
+
+.buffer
+{
+	margin-top: 25px;
+}
+
+.check
+{
+	float: right;
+}
+
+.col-sm-4
+{
+	padding-left: 15px;
+	padding-right: 0px;
+}
+
+.container
+{
+	background-color: #fba126;
+	margin-top: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.container .jumbotron
+{
+	padding: 0px;
+}
+
+.general
+{
+	width: inherit;
+}
+
+.jumbotron
+{
+	background-color: #fba126;
+	margin-bottom: 5px;
+}
+
+.links
+{
+	background: url("images/linkBG.png");
+	border: 0px;
+	border-radius: 5px;
+	color: white;
+	font-size: 12pt;
+	font-weight: bold;
+	margin-left: 5px;
+	padding-top: 15px;
+	width: 171px;
+	height: 520px;
+}
+
+.navbar {
+	margin: 5px;
+
+}
+
+.navbar-default
+{
+	background: url("images/bannerBG.jpg");
+	border: 0px;
+	border-radius: 5px;
+	height: 117px;
+}
+
+.pictures
+{
+	padding-left: 5px;
+	width: 171px;
+}
+
+.row
+{
+	margin-left: 0px;
+	margin-bottom: 5px;
+}
+
+.textWelcome
+{
+	text-align: center;
+	vertical-align: middle;
+}
+
+/*790px is when this goes outside the container*/
+.welcome
+{
+	padding-left: 10px;
+	width: 443px;
+	height: 520px;
+}
+
+@media (max-width: 250px)
+{
+	.realign
+	{
+		float: left;
+	}
+}
+
+@media (max-width: 767px)
+{
+	.gone 
+	{
+		display: none;
+	}
+	.realign 
+	{
+		padding-left: 0px;
+	}
+}
+
+@media (min-width: 768px)
+{
+	.realign 
+	{
+		padding-left: 60px;
+	}
+}
+
+@media (min-width: 790px)
+{
+	.container
+	{
+		width: 790px;
+	}
+}
