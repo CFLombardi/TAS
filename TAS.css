@@ -7,22 +7,6 @@ li
 	padding: 10px;
 }
 
-.buffer
-{
-	margin-top: 25px;
-}
-
-.check
-{
-	float: right;
-}
-
-.col-sm-4
-{
-	padding-left: 15px;
-	padding-right: 0px;
-}
-
 .container
 {
 	background-color: #fba126;
@@ -31,25 +15,117 @@ li
 	padding-right: 0px;
 }
 
-.container .jumbotron
+/*
+*classes used for the TASbar
+*/
+.check
 {
-	padding: 0px;
+	background: url("images/check.png");
+	float: right;
+	margin-top: 0px;
+	
+	width: 217px;
+	height: 117px;
 }
 
-.general
+.logo
 {
+	margin-top: 25px;
+	margin-left: 5px;
+	
+	width: 188px;
+	height: 84px;
+}
+
+.paul
+{
+	background: url("images/PaulTyrpak.png");
+	float:left;
+	margin-top: 25px;
+	margin-right: 25px;
+	
+	width: 273px;
+	height: 73px;
+}
+
+.tasbar
+{
+	background: url("images/bannerBG.jpg");
+	margin: 0px;
+	padding-left: 10px;
+	
 	width: inherit;
+	height: 117px;
 }
 
-.jumbotron
+@media (max-width: 765px)
+{	
+	.paul
+	{
+		margin-right: 0px;
+	}
+}
+
+@media (max-width: 730px)
 {
-	background-color: #fba126;
-	margin-bottom: 5px;
+	.logo
+	{
+		margin-left: 0px;
+	}
+}
+
+@media (max-width: 720px)
+{
+	.check
+	{
+		display: none;
+	}
+	
+	.logo
+	{
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
+	}
+	
+	.tn
+	{
+		float: right;
+	}
+	
+	.paul
+	{
+		display: none;
+	}
+}
+
+@media (max-width: 618px)
+{
+	.container .tasbar
+	{
+		height: 117px;
+	}
+
+}
+/*
+*End of TASbar
+*/
+
+/*
+*Information dock
+*/
+.information
+{
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+	
+	width: inherit;
 }
 
 .links
 {
-	background: url("images/linkBG.png");
+	background-color: #00349A;
 	border: 0px;
 	border-radius: 5px;
 	color: white;
@@ -57,33 +133,15 @@ li
 	font-weight: bold;
 	margin-left: 5px;
 	padding-top: 15px;
+	
 	width: 171px;
 	height: 520px;
-}
-
-.navbar {
-	margin: 5px;
-
-}
-
-.navbar-default
-{
-	background: url("images/bannerBG.jpg");
-	border: 0px;
-	border-radius: 5px;
-	height: 117px;
 }
 
 .pictures
 {
 	padding-left: 5px;
 	width: 171px;
-}
-
-.row
-{
-	margin-left: 0px;
-	margin-bottom: 5px;
 }
 
 .textWelcome
@@ -100,11 +158,67 @@ li
 	height: 520px;
 }
 
+
 @media (max-width: 250px)
 {
 	.realign
 	{
 		float: left;
+	}
+}
+
+@media (max-width: 618px)
+{
+	.container
+	{
+		height: 710px;
+	}
+	
+	.links
+	{
+		text-align: center;
+		width: 95%;
+	}
+	
+	.row
+	{
+		height: 520px;
+	}
+	
+	#prep
+	{
+		display: none;
+	}
+}
+
+@media (max-width: 633px)
+{
+	.container
+	{
+		height: 710px;
+	}
+	
+	.information
+	{
+		height: 710px;
+		padding-right: 10px;
+	}
+	
+	.links
+	{
+		text-align: center;
+		
+		width: 100%;
+	}
+	
+	.welcome
+	{
+		height: 117px;
+	}
+	
+	#prep
+	{
+		display: none;
 	}
 }
 
