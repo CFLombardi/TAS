@@ -96,7 +96,7 @@ li
 */
 .check
 {
-	background: url("images/check.png");
+	background: url("../images/check.png");
 	float: right;
 	margin-top: 0px;
 	
@@ -115,7 +115,7 @@ li
 
 .paul
 {
-	background: url("images/PaulTyrpak.png");
+	background: url("../images/PaulTyrpak.png");
 	float:left;
 	margin-top: 25px;
 	margin-right: 25px;
@@ -126,7 +126,7 @@ li
 
 .tasbar
 {
-	background: url("images/bannerBG.jpg");
+	background: url("../images/bannerBG.jpg");
 	margin: 0px;
 	padding-left: 10px;
 	
@@ -183,7 +183,7 @@ li
 {
 	.logo
 	{
-		margin-left: 20px;
+		margin-left: 40px;
 	}
 }
 
