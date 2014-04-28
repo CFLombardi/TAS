@@ -41,14 +41,14 @@
 				<!-- Links for the site -->
 				<div class = "col-xs-6 col-md-4 links">
 					<ul class = "nav nav-list bs-docs-sidenav affix-top">
-						<li id = "home"><span class = "pointer">Home</span></li>
-						<li id = "prep"><span class = "pointer">Tax Preparation</span></li>
-						<li id = "payroll"><span class = "pointer">Payroll</span></li>
-						<li id = "consulting"><span class = "pointer">Consulting</span></li>
-						<li id = "book"><span class = "pointer">Bookkeeping</span></li>
-						<li id = "forms"><span class = "pointer">Tax Forms</span></li>
-						<li id = "faq"><span class = "pointer">FAQ</span></li>
-						<li id = "background"><span class = "pointer">Background</span></li>
+						<li><span class = "home pointer">Home</span></li>
+						<li><span class = "prep pointer">Tax Preparation</span></li>
+						<li><span class = "payroll pointer">Payroll</span></li>
+						<li><span class = "consulting pointer">Consulting</span></li>
+						<li><span class = "book pointer">Bookkeeping</span></li>
+						<li><span class = "forms pointer">Tax Forms</span></li>
+						<li><span class = "faq pointer">FAQ</span></li>
+						<li><span class = "background pointer">Background</span></li>
 					</ul>
 				</div>
 				
@@ -94,13 +94,21 @@
 		<script type = "text/javascript">
 			$(document).ready(function()
 			{
-				$('#home').click(function()
+				$('.home').click(function()
 				{
 					$('.pageContents').load('pages/home.html');
 				});
-				$('#prep').click(function()
+				$('.prep').click(function()
 				{
 					$('.pageContents').load('pages/prep.html');
+				});
+				$('.payroll').click(function()
+				{
+					$('.pageContents').load('pages/construction.html');
+				});
+				$('.book').click(function()
+				{
+					$('.pageContents').load('pages/construction.html');
 				});
 				
 				setInterval('swapImages()', 5000);
