@@ -1,0 +1,17 @@
+h1
+{
+	margin-left: 20px;
+}
+
+.page
+{
+	background-color: #00349A;
+	border-radius: 5px;
+	color: white;
+	margin-left: 5px;
+}
+
+.services
+{
+	list-style-type: none;
+}

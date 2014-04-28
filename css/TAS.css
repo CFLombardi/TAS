@@ -1,13 +1,20 @@
 /*
 *Classes for general page and bootstrap customizations
 */
-body {
+body 
+{
 	background-color: black;
+	font-family: "Arial";
 }
 
 li
 {
 	padding: 10px;
+}
+
+.pointer
+{
+	cursor: pointer;
 }
 
 .container
@@ -50,7 +57,7 @@ li
 		height: 540px;
 	}
 }
-
+/*
 @media (max-width: 618px)
 {	
 	.row
@@ -58,7 +65,7 @@ li
 		height: 520px;
 	}
 }
-
+*/
 @media (max-width: 611px)
 {
 	.container
@@ -179,7 +186,15 @@ li
 	}
 }
 
-@media (max-width: 350px)
+@media (max-width: 360px)
+{
+	.logo
+	{
+		margin-left: 60px;
+	}
+}
+
+@media (max-width: 320px)
 {
 	.logo
 	{
@@ -201,7 +216,7 @@ li
 /*
 *Classes used for information dock
 */
-.information
+.dock
 {
 	margin-top: 5px;
 	margin-bottom: 5px;
@@ -226,38 +241,56 @@ li
 	height: 520px;
 }
 
+.page
+{
+	width: 605px;
+}
+
 .pictures
 {
 	padding-left: 5px;
 	width: 171px;
 }
 
+.pageContents
+{
+	height: inherit;
+}
+
 .textWelcome
 {
 	text-align: center;
 	vertical-align: middle;
+	
+	width: inherit;
 }
 
 .welcome
 {
 	padding-left: 10px;
-	width: 443px;
+	width: 425px;
 	height: 520px;
 }
 
 @media (max-width: 790px)
-{
+{	
 	.pictures
 	{
 		display: none;
 	}
+	
+	.page
+	{
+		margin-left: 0px;
+		width: 433px;
+	}
 }
 
 @media (max-width: 635px)
-{	
-	.information
+{
+	.dock
 	{
-		height: 540px;
+		height: 423px;
 		padding-right: 10px;
 	}
 	
@@ -269,17 +302,99 @@ li
 		height: 370px;
 	}
 	
+	.page
+	{
+		width: 100%;
+		height: 65px;
+	}
+	
+	.pageContent
+	{
+		height:inherit;
+	}
+	
+	.prep
+	{
+		display: none;
+	}
+	
 	.welcome
 	{
 		width: 100%;
-		height: 117px;
-	}
-	
-	#prep
-	{
-		display: none;
+		height: inherit;
 	}
 }
 /*
 *End of information dock
 */
+
+/*
+*Classes for image swapping on the main page
+*/
+#banner1{
+	position:relative;
+	width:171px; /* Set your image width */
+	height:130px; /* Set your image height */
+}
+
+#banner1 img{
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+#banner1 img.active{
+	display:block;
+}
+
+#banner2{
+	position:relative;
+	width:171px; /* Set your image width */
+	height:130px; /* Set your image height */
+}
+
+#banner2 img{
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+#banner2 img.active{
+	display:block;
+}
+
+#banner3{
+	position:relative;
+	width:171px; /* Set your image width */
+	height:130px; /* Set your image height */
+}
+
+#banner3 img{
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+#banner3 img.active{
+	display:block;
+}
+
+#banner4{
+	position:relative;
+	width:171px; /* Set your image width */
+	height:130px; /* Set your image height */
+}
+
+#banner4 img{
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+#banner4 img.active{
+	display:block;
+}
