@@ -25,7 +25,7 @@
 		<![endif]-->
 	</head>
 
-	<body>
+	<body onload = 'loadPage()'>
 		<!-- Page Content -->
 		<div class="container">
 			<!-- TASbar -->
@@ -41,7 +41,7 @@
 				<!-- Links for the site -->
 				<div class = "col-xs-6 col-md-4 links">
 					<ul class = "nav nav-list bs-docs-sidenav affix-top">
-						<li><span class = "home pointer">Home</span></li>
+						<li><span id = "home" class = "home pointer">Home</span></li>
 						<li><span class = "prep pointer">Tax Preparation</span></li>
 						<li><span class = "payroll pointer">Payroll</span></li>
 						<li><span class = "consulting pointer">Consulting</span></li>
@@ -55,33 +55,13 @@
 				<!-- Page content that will change based on the page -->
 				<div class = "col-xs-12 col-md-8 page">
 					<div class = "row pageContents">
-						<div class = " col-xs-7 col-md-4 pictures">
-							<div id = "banner1">
-								<img class = "active" src = "images/FPcolumn/banner1.jpg">
-								<img src = "images/FPcolumn/banner5.jpg">
-							</div>
-							<div id = "banner2">
-								<img class = "active" src = "images/FPcolumn/banner2.jpg">
-								<img src = "images/FPcolumn/banner6.jpg">
-							</div>
-							<div id = "banner3">
-								<img class = "active" src = "images/FPcolumn/banner3.jpg">
-								<img src = "images/FPcolumn/banner7.jpg">
-							</div>
-							<div id = "banner4">
-								<img class = "active" src = "images/FPcolumn/banner4.jpg">
-								<img src = "images/FPcolumn/banner8.jpg">
-							</div>
-						</div>
-						<div class = "col-xs-11 col-md-8 welcome">
-							<img class = "prep" src = "images/taxPrep.jpg">
-							<p class = "textWelcome">
-								Welcome to the <b>T</b>yrpak <b>A</b>ccount <b>S</b>ervice website, home of all your tax service needs.  This content will update from time to time so check back often to see the latest and greatest.
-							</p>
-						</div>
+						
 					</div>
 				</div>
 				
+			</div>
+			
+			<div id = "test" style = "font-weight: bold; text-align: center">
 			</div>
 		</div>
 
@@ -92,27 +72,54 @@
 		<script src="js/bootstrap.min.js"></script>
 		
 		<script type = "text/javascript">
+			
 			$(document).ready(function()
-			{
+			{				
 				$('.home').click(function()
 				{
 					$('.pageContents').load('pages/home.html');
+					document.getElementById('home').id = 'active';
 				});
 				$('.prep').click(function()
 				{
 					$('.pageContents').load('pages/prep.html');
+					
 				});
 				$('.payroll').click(function()
 				{
 					$('.pageContents').load('pages/construction.html');
+					
 				});
 				$('.book').click(function()
 				{
 					$('.pageContents').load('pages/construction.html');
+					
 				});
+				
+				document.getElementById('test').innerHTML = document.getElementById('active').innerHTML;
 				
 				setInterval('swapImages()', 5000);
 			});
+			
+			function loadPage()
+			{
+				if(page == "home")
+				{
+					$('.pageContents').load('pages/home.html');
+				}
+				else if(page == "prep")
+				{
+					$('.pageContents').load('pages/prep.html');
+				}
+				else if(page == "construction")
+				{
+					$('.pageContents').load('pages/construction.html');
+				}
+				else
+				{
+					$('.pageContents').load('pages/home.html');
+				}
+			}
 			
 			function swapImages()
 			{
