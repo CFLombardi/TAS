@@ -41,7 +41,7 @@
 				<!-- Links for the site -->
 				<div class = "col-xs-6 col-md-4 links">
 					<ul class = "nav nav-list bs-docs-sidenav affix-top">
-						<li><span id = "home" class = "home pointer">Home</span></li>
+						<li><span class = "home pointer">Home</span></li>
 						<li><span class = "prep pointer">Tax Preparation</span></li>
 						<li><span class = "payroll pointer">Payroll</span></li>
 						<li><span class = "consulting pointer">Consulting</span></li>
@@ -60,9 +60,6 @@
 				</div>
 				
 			</div>
-			
-			<div id = "test" style = "font-weight: bold; text-align: center">
-			</div>
 		</div>
 
 		<!-- Bootstrap core JavaScript
@@ -74,50 +71,72 @@
 		<script type = "text/javascript">
 			
 			$(document).ready(function()
-			{				
-				$('.home').click(function()
+			{
+				$(".home").click(function()
 				{
-					$('.pageContents').load('pages/home.html');
-					document.getElementById('home').id = 'active';
+					$(".pageContents").load("pages/home.html");
+					document.cookie = "page = home";
 				});
-				$('.prep').click(function()
+				$(".prep").click(function()
 				{
-					$('.pageContents').load('pages/prep.html');
-					
+					$(".pageContents").load("pages/prep.html");
+					document.cookie = "page = prep";
 				});
-				$('.payroll').click(function()
+				$(".payroll").click(function()
 				{
-					$('.pageContents').load('pages/construction.html');
-					
+					$(".pageContents").load("pages/construction.html");
+					document.cookie = "page = construction";
 				});
-				$('.book').click(function()
+				$(".consulting").click(function()
 				{
-					$('.pageContents').load('pages/construction.html');
-					
+					$(".pageContents").load("pages/construction.html");
+					document.cookie = "page = construction";
+				});
+				$(".book").click(function()
+				{
+					$(".pageContents").load("pages/construction.html");
+					document.cookie = "page = construction";
+				});
+				$(".forms").click(function()
+				{
+					$("pageContents").load("pages/construction.html");
+					document.cookie = "page = construction";
+				});
+				$(".faq").click(function()
+				{
+					$("pageContents").load("pages/construction.html");
+					document.cookie = "page = construction";
+				});
+				$(".background").click(function()
+				{
+					$(".pageContents").load("pages/construction.html");
+					document.cookie = "page = construction";
 				});
 				
-				document.getElementById('test').innerHTML = document.getElementById('active').innerHTML;
 				
-				setInterval('swapImages()', 5000);
+				setInterval("swapImages()", 5000);
 			});
 			
 			function loadPage()
 			{
-				if(page == "home")
+				var cookie = document.cookie;
+				var page = cookie.substring(5, cookie.length);
+				
+				if(page === "home")
 				{
-					$('.pageContents').load('pages/home.html');
+					$(".pageContents").load("pages/home.html");
 				}
-				else if(page == "prep")
+				else if(page === "prep")
 				{
-					$('.pageContents').load('pages/prep.html');
+					$(".pageContents").load("pages/prep.html");
 				}
-				else if(page == "construction")
+				else if(page === "construction")
 				{
-					$('.pageContents').load('pages/construction.html');
+					$(".pageContents").load("pages/construction.html");
 				}
 				else
 				{
-					$('.pageContents').load('pages/home.html');
+					$(".pageContents").load("pages/home.html");
 				}
 			}
 			
@@ -127,38 +146,38 @@
 		
 				if (x < 2) 
 				{
-					var $active = $('#banner1 .active');
-					var $next = ($('#banner1 .active').next().length > 0) ? $('#banner1 .active').next() : $('#banner1 img:first');
+					var $active = $("#banner1 .active");
+					var $next = ($("#banner1 .active").next().length > 0) ? $("#banner1 .active").next() : $("#banner1 img:first");
 					$active.fadeOut(function () {
-						$active.removeClass('active');
-						$next.fadeIn().addClass('active');
+						$active.removeClass("active");
+						$next.fadeIn().addClass("active");
 					});
 				}
 				else if (x >= 2 && x < 3) 
 				{
-					$active = $('#banner2 .active');
-					$next = ($('#banner2 .active').next().length > 0) ? $('#banner2 .active').next() : $('#banner2 img:first');
+					$active = $("#banner2 .active");
+					$next = ($("#banner2 .active").next().length > 0) ? $("#banner2 .active").next() : $("#banner2 img:first");
 					$active.fadeOut(function () {
-						$active.removeClass('active');
-						$next.fadeIn().addClass('active');
+						$active.removeClass("active");
+						$next.fadeIn().addClass("active");
 					});
 				}
 				else if (x >= 3 && x < 4) 
 				{
-					$active = $('#banner3 .active');
-					$next = ($('#banner3 .active').next().length > 0) ? $('#banner3 .active').next() : $('#banner3 img:first');
+					$active = $("#banner3 .active");
+					$next = ($("#banner3 .active").next().length > 0) ? $("#banner3 .active").next() : $("#banner3 img:first");
 					$active.fadeOut(function () {
-						$active.removeClass('active');
-						$next.fadeIn().addClass('active');
+						$active.removeClass("active");
+						$next.fadeIn().addClass("active");
 					});
 				}
 				else if (x >= 4) 
 				{
-					$active = $('#banner4 .active');
-					$next = ($('#banner4 .active').next().length > 0) ? $('#banner4 .active').next() : $('#banner4 img:first');
+					$active = $("#banner4 .active");
+					$next = ($("#banner4 .active").next().length > 0) ? $("#banner4 .active").next() : $("#banner4 img:first");
 					$active.fadeOut(function () {
-						$active.removeClass('active');
-						$next.fadeIn().addClass('active');
+						$active.removeClass("active");
+						$next.fadeIn().addClass("active");
 					});
 				}
 			}
