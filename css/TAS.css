@@ -7,9 +7,9 @@ body
 	font-family: "Arial";
 }
 
-li
+ul
 {
-	padding: 10px;
+	padding: 0px;
 }
 
 .pointer
@@ -17,87 +17,52 @@ li
 	cursor: pointer;
 }
 
+.cleanList
+{
+	list-style: none;
+}
+
 .container
 {
 	background-color: #fba126;
 	margin-top: 15px;
 	margin-bottom: 15px;
-	padding-left: 0px;
-	padding-right: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	
+	width: 790px;
+	height: 647px;
 }
 
-@media (min-width: 790px)
+.pageList
 {
-	.container
-	{
-		width: 790px;
-	}
+	margin-top: 10px;
+	margin-left: 25px;
 }
 
-@media (max-width: 790px) and (min-width: 635px)
-{	
-	.container
-	{
-		width: 619px;
-	}
-}
-
-@media (max-width: 635px)
+.pageList li
 {
-	.container
-	{
-		width: 100%;
-	}
+	padding-bottom: 15px;
 }
 
-@media (max-width: 635px) and (min-width: 612px)
+.title
 {
-	.container
-	{
-		height: 540px;
-	}
-}
-
-@media (max-width: 611px)
-{
-	.container
-	{
-		height: 560px;
-	}
-}
-
-@media (max-width: 429px)
-{
-	.container
-	{
-		height: 580px;
-	}
-}
-
-@media (max-width: 350px)
-{
-	.container
-	{
-		height: 600px;
-	}
-}
-
-@media (max-width: 295px)
-{
-	.container
-	{
-		height: 620px;
-	}
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 5px;
+	padding-left: 10px;
 }
 
 /*
-*classes used for the TASbar
+*Classes used for the TASbar
 */
 .check
 {
 	background: url("../images/check.png");
 	float: right;
 	margin-top: 0px;
+	padding: 0xp;
 	
 	width: 217px;
 	height: 117px;
@@ -105,8 +70,11 @@ li
 
 .logo
 {
+	float: left;
 	margin-top: 25px;
-	margin-left: 5px;
+	margin-left: 50px;
+	padding: 0px;
+
 	
 	width: 188px;
 	height: 84px;
@@ -115,9 +83,10 @@ li
 .paul
 {
 	background: url("../images/PaulTyrpak.png");
-	float:left;
+	float: left;
 	margin-top: 25px;
-	margin-right: 25px;
+	margin-left: 10px;
+	padding: 0px;
 	
 	width: 273px;
 	height: 73px;
@@ -127,95 +96,32 @@ li
 {
 	background: url("../images/bannerBG.jpg");
 	margin: 0px;
-	padding-left: 10px;
+	padding: 0px;
 	
 	width: inherit;
 	height: 117px;
 }
 
-@media (max-width: 790px)
-{
-	.check
-	{
-		display: none;
-	}
-	
-	.logo
-	{
-		margin-left: 185px;
-	}
-	
-	.paul
-	{
-		display: none;
-	}
-}
-
-@media (max-width: 635px) and (min-width: 475px)
-{
-	.logo
-	{
-		float: right;
-		margin-left: auto;
-		margin-right: auto;
-		width: 70%;
-	}
-}
-
-@media (max-width: 618px)
-{
-	.container .tasbar
-	{
-		height: 117px;
-	}
-}
-
-@media (max-width: 475px)
-{
-	.logo
-	{
-		margin-left: 75px;
-	}
-}
-
-@media (max-width: 360px)
-{
-	.logo
-	{
-		margin-left: 60px;
-	}
-}
-
-@media (max-width: 320px)
-{
-	.logo
-	{
-		margin-left: 40px;
-	}
-}
-
-@media (max-width: 285px)
-{
-	.logo
-	{
-		margin-left: 0px;
-	}
-}
 /*
-*End of TASbar
+*Classes for the information dock
 */
+.caption
+{
+	text-align: center;
+}
 
-/*
-*Classes used for information dock
-*/
+.construction
+{
+	margin-left: 130px;
+	margin-top: 80px;
+}
+
 .dock
 {
-	margin-top: 5px;
-	margin-bottom: 5px;
-	margin-left: 0px;
-	margin-right: 0px;
+	margin: 0px;
 	
 	width: inherit;
+	height: 530px;
 }
 
 .links
@@ -226,11 +132,19 @@ li
 	color: white;
 	font-size: 12pt;
 	font-weight: bold;
+	float: left;
+	list-style: none;
+	margin-top: 5px;
 	margin-left: 5px;
-	padding-top: 15px;
+	padding-top: 10px;
 	
 	width: 171px;
-	height: 520px;
+}
+
+.links li
+{
+	margin-left: 25px;
+	padding-bottom: 10px;
 }
 
 .page
@@ -240,50 +154,125 @@ li
 
 .pictures
 {
-	padding-left: 5px;
+	float: left;
+	margin-top: 5px;
+	
 	width: 171px;
+	height: 520px;
 }
 
-.pageContents
+.pageContent
 {
+	float: left;
+	margin-left: 5px;
+	padding: 0px;
+	
+	width: 605px;
 	height: inherit;
+}
+
+.services
+{
+	background-color: #00349A;
+	border-radius: 5px;
+	color: white;
+	margin-top: 5px;
+	margin-left: 0px;
+	
+	height: 520px;
+}
+
+.tax
+{
+	margin-bottom: 0px;
 }
 
 .textWelcome
 {
+	margin-top: 0px;
+	padding: 0px;
 	text-align: center;
 	vertical-align: middle;
 	
 	width: inherit;
+	height: 130px;
 }
 
 .welcome
 {
-	padding-left: 10px;
+	float: right;
+	margin-top: 5px;
+	margin-right: 3px;
+	padding: 0px;
+	
 	width: 425px;
 	height: 520px;
 }
 
+/*
+*screen size reactions
+*/
 @media (max-width: 790px)
-{	
-	.pictures
+{
+	.construction
+	{
+		margin-left: 50px;
+	}
+	
+	.check
 	{
 		display: none;
+	}
+	
+	.logo
+	{
+		margin-left: 185px;
 	}
 	
 	.page
 	{
 		margin-left: 0px;
+		
 		width: 433px;
+	}
+	
+	.paul
+	{
+		display: none;
+	}
+	
+	.pictures
+	{
+		display: none;
+	}
+}
+
+@media (max-width: 790px) and (min-width: 635px)
+{
+	.container
+	{
+		width: 619px;
 	}
 }
 
 @media (max-width: 635px)
 {
+	.construction
+	{
+		margin-left: 135px;
+		margin-top: 25px;
+	}
+	
+	.container
+	{
+		width: 100%;
+	}
+	
 	.dock
 	{
-		height: 423px;
 		padding-right: 10px;
+		
+		height: 423px;
 	}
 	
 	.links
@@ -300,9 +289,14 @@ li
 		height: 65px;
 	}
 	
-	.pageContent
+	.pageContents
 	{
-		height:inherit;
+		height: inherit;
+	}
+	
+	.tax
+	{
+		display: none;
 	}
 	
 	.welcome
@@ -311,12 +305,101 @@ li
 		height: inherit;
 	}
 }
-/*
-*End of information dock
-*/
+
+@media (max-width: 635px) and (min-width: 612px)
+{
+	.container
+	{
+		height: 540px;
+	}
+}
+
+@media (max-width: 635px) and (min-width: 475px)
+{
+	.logo
+	{
+		float: right;
+		margin-left: auto;
+		margin-right: auto;
+		
+		width: 70%;
+	}
+}
+
+@media (max-width: 618px)
+{
+	.container .tasbar
+	{
+		height: 117px;
+	}
+}
+
+@media (max-width: 611px)
+{
+	.container
+	{
+		height: 560px;
+	}
+}
+
+@media (max-width: 475px)
+{
+	.logo
+	{
+		margin-left: 75px;
+	}
+}
+
+@media (max-width: 429px)
+{
+	.container
+	{
+		height: 580px;
+	}
+}
+
+@media (max-width: 360px)
+{
+	.logo
+	{
+		margin-left: 60px;
+	}
+}
+
+@media (max-width: 350px)
+{
+	.container
+	{
+		height: 600px;
+	}
+}
+
+@media (max-width: 320px)
+{
+	.logo
+	{
+		margin-left: 40px;
+	}
+}
+
+@media (max-width: 295px)
+{
+	.container
+	{
+		height: 620px;
+	}
+}
+
+@media (max-width: 285px)
+{
+	.logo
+	{
+		margin-left: 0px;
+	}
+}
 
 /*
-*Classes for image swapping on the main page
+*IDs for image swapping on the main page
 */
 #banner1{
 	position:relative;

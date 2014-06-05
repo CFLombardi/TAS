@@ -9,56 +9,35 @@
 
 		<title>TAS Tyrpak Accounting Services</title>
 
-		<!-- Bootstrap core CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-
 		<!-- Custom styles for this template -->
-		<link href="css/master.css" rel="stylesheet">
-
-		<!-- Just for debugging purposes. Don't actually copy this line! -->
-		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
+		<link href="css/TAS.css" rel="stylesheet">
 	</head>
 
 	<body onload = 'loadPage()'>
 		<!-- Page Content -->
 		<div class="container">
 			<!-- TASbar -->
-			<div class = "row tasbar">
-				<div class = "col-xs-6 col-md-4 paul"></div>
-				<div class = "col-xs-6 col-md-4 logo"><img class = "tn" src = "images/logoTN.png"></div>
-				<div class = "col-xs-6 col-md-4 check"></div>
+			<div class = "tasbar">
+				<div class = "paul"></div>
+				<div class = "logo"><img src = "images/logoTN.png"></div>
+				<div class = "check"></div>
 			</div>
 
 			<!-- Information dock -->
-			<div class = "row dock">
-			
-				<!-- Links for the site -->
-				<div class = "col-xs-6 col-md-4 links">
-					<ul class = "nav nav-list bs-docs-sidenav affix-top">
-						<li><span class = "home pointer">Home</span></li>
-						<li><span class = "prep pointer">Tax Preparation</span></li>
-						<li><span class = "payroll pointer">Payroll</span></li>
-						<li><span class = "consulting pointer">Consulting</span></li>
-						<li><span class = "book pointer">Bookkeeping</span></li>
-						<li><span class = "forms pointer">Tax Forms</span></li>
-						<li><span class = "faq pointer">FAQ</span></li>
-						<li><span class = "background pointer">Background</span></li>
-					</ul>
+			<div class = "dock">
+				<ul class = "links">
+					<li><span class = "home pointer">Home</span></li>
+					<li><span class = "prep pointer">Tax Preparation</span></li>
+					<li><span class = "payroll pointer">Payroll</span></li>
+					<li><span class = "consulting pointer">Consulting</span></li>
+					<li><span class = "book pointer">Bookkeeping</span></li>
+					<li><span class = "forms pointer">Tax Forms</span></li>
+					<li><span class = "faq pointer">FAQ</span></li>
+					<li><span class = "background pointer">Background</span></li>
+				</ul>
+				<div class = "pageContent">
+					
 				</div>
-				
-				<!-- Page content that will change based on the page -->
-				<div class = "col-xs-12 col-md-8 page">
-					<div class = "row pageContents">
-						
-					</div>
-				</div>
-				
 			</div>
 		</div>
 
@@ -74,42 +53,42 @@
 			{
 				$(".home").click(function()
 				{
-					$(".pageContents").load("pages/home.html");
+					$(".pageContent").load("pages/home.html");
 					document.cookie = "page = home";
 				});
 				$(".prep").click(function()
 				{
-					$(".pageContents").load("pages/prep.html");
+					$(".pageContent").load("pages/prep.html");
 					document.cookie = "page = prep";
 				});
 				$(".payroll").click(function()
 				{
-					$(".pageContents").load("pages/construction.html");
+					$(".pageContent").load("pages/construction.html");
 					document.cookie = "page = construction";
 				});
 				$(".consulting").click(function()
 				{
-					$(".pageContents").load("pages/construction.html");
+					$(".pageContent").load("pages/construction.html");
 					document.cookie = "page = construction";
 				});
 				$(".book").click(function()
 				{
-					$(".pageContents").load("pages/construction.html");
+					$(".pageContent").load("pages/construction.html");
 					document.cookie = "page = construction";
 				});
 				$(".forms").click(function()
 				{
-					$("pageContents").load("pages/construction.html");
+					$("page").load("pages/construction.html");
 					document.cookie = "page = construction";
 				});
 				$(".faq").click(function()
 				{
-					$("pageContents").load("pages/construction.html");
+					$("page").load("pages/construction.html");
 					document.cookie = "page = construction";
 				});
 				$(".background").click(function()
 				{
-					$(".pageContents").load("pages/construction.html");
+					$(".pageContent").load("pages/construction.html");
 					document.cookie = "page = construction";
 				});
 				
@@ -124,19 +103,19 @@
 				
 				if(page === "home")
 				{
-					$(".pageContents").load("pages/home.html");
+					$(".pageContent").load("pages/home.html");
 				}
 				else if(page === "prep")
 				{
-					$(".pageContents").load("pages/prep.html");
+					$(".pageContent").load("pages/prep.html");
 				}
 				else if(page === "construction")
 				{
-					$(".pageContents").load("pages/construction.html");
+					$(".pageContent").load("pages/construction.html");
 				}
 				else
 				{
-					$(".pageContents").load("pages/home.html");
+					$(".pageContent").load("pages/home.html");
 				}
 			}
 			
