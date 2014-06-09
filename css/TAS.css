@@ -9,6 +9,7 @@ body
 
 ul
 {
+	margin: 0px;
 	padding: 0px;
 }
 
@@ -113,15 +114,16 @@ ul
 .construction
 {
 	margin-left: 130px;
-	margin-top: 80px;
 }
 
 .dock
 {
-	margin: 0px;
+	margin-top: 5px;
+	margin-left: 5px;
+	padding: 0px;
 	
-	width: inherit;
-	height: 530px;
+	width: 780px;
+	height: 520px;
 }
 
 .links
@@ -134,11 +136,10 @@ ul
 	font-weight: bold;
 	float: left;
 	list-style: none;
-	margin-top: 5px;
-	margin-left: 5px;
+	margin: 0px;
 	padding-top: 10px;
 	
-	width: 171px;
+	width: 170px;
 }
 
 .links li
@@ -155,10 +156,9 @@ ul
 .pictures
 {
 	float: left;
-	margin-top: 5px;
 	
 	width: 171px;
-	height: 520px;
+	height: inherit;
 }
 
 .pageContent
@@ -176,10 +176,10 @@ ul
 	background-color: #00349A;
 	border-radius: 5px;
 	color: white;
-	margin-top: 5px;
-	margin-left: 0px;
+
 	
-	height: 520px;
+	width: inherit;
+	height: inherit;
 }
 
 .tax
@@ -201,39 +201,50 @@ ul
 .welcome
 {
 	float: right;
-	margin-top: 5px;
-	margin-right: 3px;
+	margin-right: 2px;
 	padding: 0px;
 	
 	width: 425px;
-	height: 520px;
+	height: inherit;
 }
 
 /*
 *screen size reactions
 */
-@media (max-width: 790px)
+@media (max-width: 815px)
 {
-	.construction
-	{
-		margin-left: 50px;
-	}
-	
 	.check
 	{
 		display: none;
 	}
 	
-	.logo
+	.construction
 	{
-		margin-left: 185px;
+		margin-top: 0px;
+		margin-left: 40px;
 	}
 	
-	.page
+	.container
 	{
-		margin-left: 0px;
-		
+		width: 619px;
+		height: 580px;
+	}
+	
+	.dock
+	{
+		width: inherit;
+		height: 460px;
+	}
+	
+	.logo
+	{
+		margin-left: 225px;
+	}
+	
+	.pageContent
+	{	
 		width: 433px;
+		height: 440px;
 	}
 	
 	.paul
@@ -243,55 +254,50 @@ ul
 	
 	.pictures
 	{
-		display: none;
+		display:none;
 	}
 }
 
-@media (max-width: 790px) and (min-width: 635px)
-{
-	.container
-	{
-		width: 619px;
-	}
-}
-
-@media (max-width: 635px)
+@media (max-width: 650px)
 {
 	.construction
 	{
-		margin-left: 135px;
-		margin-top: 25px;
+		margin-left: 0px;
+		
+		width: inherit;
 	}
 	
 	.container
 	{
-		width: 100%;
+		width: 360px;
+		height: 460px;
 	}
 	
 	.dock
 	{
-		padding-right: 10px;
-		
-		height: 423px;
+		width: 350px;
+		height: 333px;
 	}
 	
 	.links
 	{
 		text-align: center;
 		
-		width: 100%;
-		height: 370px;
+		width: inherit;
 	}
 	
-	.page
+	.logo
 	{
-		width: 100%;
-		height: 65px;
+		margin-left: 90px;
 	}
 	
-	.pageContents
+	.pageContent
 	{
-		height: inherit;
+		margin-top: 5px;
+		margin-left: 0px;
+		
+		width: inherit;
+		height: 78px;
 	}
 	
 	.tax
@@ -299,30 +305,16 @@ ul
 		display: none;
 	}
 	
-	.welcome
+	.textWelcome
 	{
-		width: 100%;
 		height: inherit;
 	}
-}
-
-@media (max-width: 635px) and (min-width: 612px)
-{
-	.container
+	
+	.welcome
 	{
-		height: 540px;
-	}
-}
-
-@media (max-width: 635px) and (min-width: 475px)
-{
-	.logo
-	{
-		float: right;
-		margin-left: auto;
-		margin-right: auto;
-		
-		width: 70%;
+		float: left;
+		margin: 0px;
+		width: inherit;
 	}
 }
 
@@ -334,67 +326,30 @@ ul
 	}
 }
 
-@media (max-width: 611px)
+
+
+@media (max-width: 390px)
 {
 	.container
 	{
-		height: 560px;
+		width: 230px;
+		height: 495px;
 	}
-}
-
-@media (max-width: 475px)
-{
+	
+	.dock
+	{
+		width: 220px;
+		height: 363px;
+	}
+	
 	.logo
 	{
-		margin-left: 75px;
+		margin-left: 20px;
 	}
-}
-
-@media (max-width: 429px)
-{
-	.container
+	
+	.pageContent
 	{
-		height: 580px;
-	}
-}
-
-@media (max-width: 360px)
-{
-	.logo
-	{
-		margin-left: 60px;
-	}
-}
-
-@media (max-width: 350px)
-{
-	.container
-	{
-		height: 600px;
-	}
-}
-
-@media (max-width: 320px)
-{
-	.logo
-	{
-		margin-left: 40px;
-	}
-}
-
-@media (max-width: 295px)
-{
-	.container
-	{
-		height: 620px;
-	}
-}
-
-@media (max-width: 285px)
-{
-	.logo
-	{
-		margin-left: 0px;
+		height: 113px;
 	}
 }
 
