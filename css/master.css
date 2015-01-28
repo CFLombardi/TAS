@@ -1,0 +1,172 @@
+a
+{
+	font-weight: bold;
+	color: white;
+	text-decoration:none;
+}
+
+a:hover
+{
+	color: purple;
+}
+
+body
+{
+	background-color: black;
+	
+    font-family: "Arial";
+    font-size: 16px;
+	color: black;
+    
+	height: 100%;
+	
+	margin: 0px;
+	border-width: 0px;
+}
+
+html 
+{ 
+	height: 100%;
+}
+
+td.construction
+{
+	width: 596px;
+	height: 503px;
+}
+
+td.background, td.consulting, td.FAQ, td.forms, td.taxPrep
+{
+	background-color: #013fba;
+	
+	color: white;
+	
+	border-radius: 10px;
+	padding: 10px;
+	
+	width: 596px;
+	height: 503px;
+	
+	text-align: top;
+	vertical-align: top;
+}
+
+td.links
+{
+	background: url(/images/linksBG.jpg);
+	
+	border-radius: 10px;
+	padding: 10px;
+	
+	width: 150px;
+	height: 503px;
+	
+	vertical-align: text-top;
+}
+
+td.pictures
+{
+	border-radius: 10px;
+	width: 171px;
+	height: 503px;
+}
+
+td.welcome
+{
+	width: 425px;
+	height: 369px;
+	
+	text-align: center;
+	vertical-align: top;
+}
+
+.banner
+{
+	background: url(/images/TASBanner.jpg);
+	background-position-x: 0%;
+	background-position-y: 0%;
+	
+	margin: auto;
+	
+	width: 780px;
+	height: 117px;
+}
+
+
+
+.container
+{
+	background-color: #fba126;
+	
+	margin: 15px auto;
+	padding: 5px 0px;
+	
+	width: 790px;
+}
+
+.footer
+{
+	font-size: 10px;
+	
+	text-align: center;
+}
+
+#banner1{
+      position:relative;
+      width:171px; /* Set your image width */
+      height:130px; /* Set your image height */
+}
+#banner1 img{
+      display:none;
+      position:absolute;
+      top:0;
+      left:0;
+}
+#banner1 img.active{
+      display:block;
+}
+
+#banner2{
+      position:relative;
+      width:171px; /* Set your image width */
+      height:130px; /* Set your image height */
+}
+#banner2 img{
+      display:none;
+      position:absolute;
+      top:0;
+      left:0;
+}
+#banner2 img.active{
+      display:block;
+}
+
+#banner3{
+      position:relative;
+      width:171px; /* Set your image width */
+      height:130px; /* Set your image height */
+}
+#banner3 img{
+      display:none;
+      position:absolute;
+      top:0;
+      left:0;
+}
+#banner3 img.active{
+      display:block;
+}
+
+#banner4{
+      position:relative;
+      width:171px; /* Set your image width */
+      height:130px; /* Set your image height */
+}
+#banner4 img{
+      display:none;
+      position:absolute;
+      top:0;
+      left:0;
+}
+#banner4 img.active{
+      display:block;
+}

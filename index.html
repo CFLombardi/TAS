@@ -7,44 +7,55 @@
     
 		<link rel="shortcut icon" href="favicon.ico">
 
-		<title>TAS Tyrpak Accounting Services</title>
+		<title>test</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 
 		<!-- Custom styles for this template -->
 		<link href="css/TAS.css" rel="stylesheet">
+
+		<!-- Just for debugging purposes. Don't actually copy this line! -->
+		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
 	</head>
 
-	<body onload = 'loadPage()'>
-		<!-- Page Content -->
-		<div class="container">
-			<!-- TASbar -->
-			<div class = "tasbar">
-				<div class = "paul"></div>
-				<div class = "logo"><img src = "images/logoTN.png"></div>
-				<div class = "check"></div>
-			</div>
-
-			<!-- Information dock -->
-			<div class = "dock">
-				<ul class = "links">
-					<li><span class = "home pointer">Home</span></li>
-					<li><span class = "prep pointer">Tax Preparation</span></li>
-					<li><span class = "payroll pointer">Payroll</span></li>
-					<li><span class = "consulting pointer">Consulting</span></li>
-					<li><span class = "book pointer">Bookkeeping</span></li>
-					<li><span class = "forms pointer">Tax Forms</span></li>
-					<li><span class = "faq pointer">FAQ</span></li>
-					<li><span class = "background pointer">Background</span></li>
-				</ul>
-				<div class = "pageContent">
-					
+	<body onload = "loadPage()">
+		<div class = "container">
+			<div class = "panel panel-default site">
+				<div class = "panel-heading row tasbar">
+					<div class = "col-xs-6 col-md-4 paul"></div>
+					<div class = "col-xs-6 col-md-4 logo">
+						<img src = "images/logoTN.png">
+					</div>
+					<div class = "col-xs-6 col-md-4 check"></div>
 				</div>
+				<div class = "panel-body dock">
+					<ul class="links">
+						<li><span class="home pointer">Home</span></li>
+						<li><span class="prep pointer">Tax Preparation</span></li>
+						<li><span class="payroll pointer">Payroll</span></li>
+						<li><span class="consulting pointer">Consulting</span></li>
+						<li><span class="book pointer">Bookkeeping</span></li>
+						<li><span class="forms pointer">Tax Forms</span></li>
+						<li><span class="faq pointer">FAQ</span></li>
+						<li><span class="background pointer">Background</span></li>
+					</ul>
+					<div class = "pageContent">
+					
+					</div>
+				</div>
+				<p class = "footer">Designed by Anthony Tyrpak</p>
 			</div>
 		</div>
-
-		<!-- Bootstrap core JavaScript
-		================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		
+		<!-- the javascript -->
+		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		
 		<script type = "text/javascript">
@@ -78,12 +89,12 @@
 				});
 				$(".forms").click(function()
 				{
-					$("page").load("pages/construction.html");
-					document.cookie = "page = construction";
+					$(".pageContent").load("pages/forms.html");
+					document.cookie = "page = forms";
 				});
 				$(".faq").click(function()
 				{
-					$("page").load("pages/construction.html");
+					$(".pageContent").load("pages/construction.html");
 					document.cookie = "page = construction";
 				});
 				$(".background").click(function()
@@ -91,7 +102,6 @@
 					$(".pageContent").load("pages/construction.html");
 					document.cookie = "page = construction";
 				});
-				
 				
 				setInterval("swapImages()", 5000);
 			});
@@ -112,6 +122,10 @@
 				else if(page === "construction")
 				{
 					$(".pageContent").load("pages/construction.html");
+				}
+				else if(page === "forms")
+				{
+					$(".pageContent").load("pages/forms.html");
 				}
 				else
 				{
@@ -161,6 +175,5 @@
 				}
 			}
 		</script>
-		
 	</body>
 </html>
