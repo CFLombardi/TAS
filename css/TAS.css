@@ -270,16 +270,6 @@ li
 	height: 535px;
 }
 
-.information
-{
-	margin-top: 5px;
-	margin-bottom: 5px;
-	margin-left: 0px;
-	margin-right: 0px;
-	
-	width: inherit;
-}
-
 .links
 {
 	background-color: #00349A;
@@ -356,12 +346,6 @@ li
 		height: 512px;
 	}
 	
-	.information
-	{
-		height: 540px;
-		padding-right: 10px;
-	}
-	
 	.links
 	{
 		text-align: center;
@@ -391,11 +375,6 @@ li
 	{
 		width: 100%;
 		height: 117px;
-	}
-	
-	#prep
-	{
-		display: none;
 	}
 }
 /*

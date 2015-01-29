@@ -1,0 +1,109 @@
+.pictures
+{
+	float: left;
+	padding-left: 0px; /* used to be 5px */
+	
+	width: 171px;
+	height: 520px;
+}
+
+.textWelcome
+{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.welcome
+{
+	float: right;
+	padding-left: 0px; /* used to be 10px */
+	padding-right: 0px;
+	
+	width: 428px;
+	height: 520px;
+}
+
+@media (max-width: 790px)
+{
+	.pictures
+	{
+		display: none;
+	}
+}
+
+@media (max-width: 635px)
+{
+	.tax
+	{
+		display: none;
+	}
+	
+	.welcome
+	{
+		width: 100%;
+		height: 117px;
+	}
+}
+
+/*
+* Functionality for the picture banner on the home page
+*/
+#banner1{
+      position:relative;
+      width:171px; /* Set your image width */
+      height:130px; /* Set your image height */
+}
+#banner1 img{
+      display:none;
+      position:absolute;
+      top:0;
+      left:0;
+}
+#banner1 img.active{
+      display:block;
+}
+
+#banner2{
+      position:relative;
+      width:171px; /* Set your image width */
+      height:130px; /* Set your image height */
+}
+#banner2 img{
+      display:none;
+      position:absolute;
+      top:0;
+      left:0;
+}
+#banner2 img.active{
+      display:block;
+}
+
+#banner3{
+      position:relative;
+      width:171px; /* Set your image width */
+      height:130px; /* Set your image height */
+}
+#banner3 img{
+      display:none;
+      position:absolute;
+      top:0;
+      left:0;
+}
+#banner3 img.active{
+      display:block;
+}
+
+#banner4{
+      position:relative;
+      width:171px; /* Set your image width */
+      height:130px; /* Set your image height */
+}
+#banner4 img{
+      display:none;
+      position:absolute;
+      top:0;
+      left:0;
+}
+#banner4 img.active{
+      display:block;
+}
