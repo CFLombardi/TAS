@@ -14,11 +14,6 @@ li
 /*
 *Custom classes
 */
-.caption
-{
-	text-align: center;
-}
-
 .check
 {
 	background: url("../images/check.png");
@@ -33,14 +28,6 @@ li
 .cleanList
 {
 	list-style-type: none;
-}
-
-.construction
-{
-	display: table-cell;
-	margin-top: 15%;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .container
@@ -115,26 +102,9 @@ li
 	height: 73px;
 }
 
-.pictures
-{
-	float: left;
-	padding-left: 0px; /* used to be 5px */
-	
-	width: 171px;
-	height: 520px;
-}
-
 .pointer
 {
 	cursor: pointer;
-}
-
-.services
-{
-	background-color: #00349A;
-	border-radius: 5px;
-	color: #FFFFFF;
-	margin-top: 0px;
 }
 
 .site
@@ -154,91 +124,6 @@ li
 	
 	width: inherit;
 	height: 117px;
-}
-
-.textWelcome
-{
-	text-align: center;
-	vertical-align: middle;
-}
-
-.title
-{
-	margin: 0px;
-	padding: 10px;
-}
-
-.welcome
-{
-	float: right;
-	padding-left: 0px; /* used to be 10px */
-	padding-right: 0px;
-	
-	width: 428px;
-	height: 520px;
-}
-
-/*
-* Functionality for the picture banner on the home page
-*/
-#banner1{
-      position:relative;
-      width:171px; /* Set your image width */
-      height:130px; /* Set your image height */
-}
-#banner1 img{
-      display:none;
-      position:absolute;
-      top:0;
-      left:0;
-}
-#banner1 img.active{
-      display:block;
-}
-
-#banner2{
-      position:relative;
-      width:171px; /* Set your image width */
-      height:130px; /* Set your image height */
-}
-#banner2 img{
-      display:none;
-      position:absolute;
-      top:0;
-      left:0;
-}
-#banner2 img.active{
-      display:block;
-}
-
-#banner3{
-      position:relative;
-      width:171px; /* Set your image width */
-      height:130px; /* Set your image height */
-}
-#banner3 img{
-      display:none;
-      position:absolute;
-      top:0;
-      left:0;
-}
-#banner3 img.active{
-      display:block;
-}
-
-#banner4{
-      position:relative;
-      width:171px; /* Set your image width */
-      height:130px; /* Set your image height */
-}
-#banner4 img{
-      display:none;
-      position:absolute;
-      top:0;
-      left:0;
-}
-#banner4 img.active{
-      display:block;
 }
 
 /*
@@ -270,11 +155,6 @@ li
 	}
 	
 	.paul
-	{
-		display: none;
-	}
-	
-	.pictures
 	{
 		display: none;
 	}
@@ -328,17 +208,6 @@ li
 	.site
 	{
 		height: 647px;
-	}
-	
-	.tax
-	{
-		display: none;
-	}
-	
-	.welcome
-	{
-		width: 100%;
-		height: 117px;
 	}
 }
 	
