@@ -1,13 +1,28 @@
 /*
-*Classes for general page and bootstrap customizations
+*HTML adjustments
 */
-body {
+body 
+{
 	background-color: black;
 }
 
 li
 {
 	padding-bottom: 25px;
+}
+
+/*
+*Custom classes
+*/
+.check
+{
+	background: url("../images/check.png");
+	float: right;
+	margin-top: 0px;
+	top: 0px;
+	
+	width: 217px;
+	height: 117px;
 }
 
 .cleanList
@@ -24,6 +39,14 @@ li
 	padding-right: 0px;
 }
 
+.dock
+{
+	margin-bottom: 0px;
+	padding: 5px;
+	
+	height: 535px;
+}
+
 .footer
 {
 	font-size: 10px;
@@ -32,242 +55,6 @@ li
 	text-align: center;
 	
 	width: 100%;
-}
-
-.pointer
-{
-	cursor: pointer;
-}
-
-.site
-{
-	background-color: #FBA126;
-	border: 0px;
-	margin-bottom: 0px;
-	
-	height: 647px;
-}
-
-@media (min-width: 790px)
-{
-	.container
-	{
-		width: 790px;
-	}
-	
-	.site
-	{
-		height: 667px;
-	}
-}
-
-@media (max-width: 790px) and (min-width: 624px)
-{	
-	.container
-	{
-		width: 619px;
-	}
-	
-	.site
-	{
-		height: 667px;
-	}
-}
-
-@media (max-width: 635px)
-{
-	.container
-	{
-		width: 100%;
-	}
-}
-
-@media (max-width: 635px) and (min-width: 612px)
-{
-	.container
-	{
-		height: 540px;
-	}
-}
-
-@media (max-width: 618px)
-{	
-	.row
-	{
-		height: 520px;
-	}
-}
-
-@media (max-width: 611px)
-{
-	.container
-	{
-		height: 560px;
-	}
-}
-
-@media (max-width: 429px)
-{
-	.container
-	{
-		height: 580px;
-	}
-}
-
-@media (max-width: 350px)
-{
-	.container
-	{
-		height: 600px;
-	}
-}
-
-@media (max-width: 295px)
-{
-	.container
-	{
-		height: 620px;
-	}
-}
-
-/*
-*classes used for the TASbar
-*/
-.check
-{
-	background: url("../images/check.png");
-	float: right;
-	margin-top: 0px;
-	top: 0px;
-	
-	width: 217px;
-	height: 117px;
-}
-
-.logo
-{
-	margin-top: 25px;
-	margin-left: 5px;
-	
-	width: 188px;
-	height: 84px;
-}
-
-.paul
-{
-	background: url("../images/PaulTyrpak.png");
-	float:left;
-	margin-top: 25px;
-	margin-left: 15px;
-	margin-right: 25px;
-	
-	
-	width: 273px;
-	height: 73px;
-}
-
-.title
-{
-	margin: 0px;
-	padding: 10px;
-}
-
-.tasbar
-{
-	background: url("../images/bannerBG.jpg");
-	margin: 0px;
-	padding: 0px;
-	
-	width: inherit;
-	height: 117px;
-}
-
-@media (max-width: 790px)
-{
-	.check
-	{
-		display: none;
-	}
-	
-	.logo
-	{
-		margin-left: 185px;
-	}
-	
-	.paul
-	{
-		display: none;
-	}
-}
-
-@media (max-width: 635px) and (min-width: 475px)
-{
-	.logo
-	{
-		float: right;
-		margin-left: auto;
-		margin-right: auto;
-		width: 70%;
-	}
-}
-
-@media (max-width: 618px)
-{
-	.container .tasbar
-	{
-		height: 117px;
-	}
-}
-
-@media (max-width: 475px)
-{
-	.logo
-	{
-		margin-left: 75px;
-	}
-}
-
-@media (max-width: 350px)
-{
-	.logo
-	{
-		margin-left: 40px;
-	}
-}
-
-@media (max-width: 285px)
-{
-	.logo
-	{
-		margin-left: 0px;
-	}
-}
-/*
-*End of TASbar
-*/
-
-/*
-*Classes used for information dock
-*/
-.caption
-{
-	text-align: center;
-}
-
-.construction
-{
-	display: table-cell;
-	margin-top: 15%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.dock
-{
-	margin-bottom: 0px;
-	padding: 5px;
-	
-	height: 535px;
 }
 
 .links
@@ -284,7 +71,16 @@ li
 	padding-top: 25px;
 	padding-left: 25px;
 	width: 171px;
-	height: 520px; /* used to be 520px */
+	height: 520px;
+}
+
+.logo
+{
+	margin-top: 25px;
+	margin-left: 5px;
+	
+	width: 188px;
+	height: 84px;
 }
 
 .pageContent
@@ -293,42 +89,72 @@ li
 	width: 604px;
 }
 
-.pictures
+.paul
 {
-	float: left;
-	padding-left: 0px; /* used to be 5px */
+	background: url("../images/PaulTyrpak.png");
+	float:left;
+	margin-top: 25px;
+	margin-left: 15px;
+	margin-right: 25px;
 	
-	width: 171px;
-	height: 520px;
-}
-
-.services
-{
-	background-color: #00349A;
-	border-radius: 5px;
-	color: #FFFFFF;
-	margin-top: 0px;
-}
-
-.textWelcome
-{
-	text-align: center;
-	vertical-align: middle;
-}
-
-.welcome
-{
-	float: right;
-	padding-left: 0px; /* used to be 10px */
-	padding-right: 0px;
 	
-	width: 428px;
-	height: 520px;
+	width: 273px;
+	height: 73px;
 }
 
+.pointer
+{
+	cursor: pointer;
+}
+
+.site
+{
+	background-color: #FBA126;
+	border: 0px;
+	margin-bottom: 0px;
+	
+	height: 647px;
+}
+
+.tasbar
+{
+	background: url("../images/bannerBG.jpg");
+	margin: 0px;
+	padding: 0px;
+	
+	width: inherit;
+	height: 117px;
+}
+
+/*
+*Screen responsiveness
+*/
+@media (min-width: 790px)
+{
+	.container
+	{
+		width: 790px;
+	}
+	
+	.site
+	{
+		height: 667px;
+	}
+}
+	
 @media (max-width: 790px)
 {
-	.pictures
+	.check
+	{
+		display: none;
+	}
+	
+	.logo
+	{
+		margin-left: 185px;
+	}
+	
+	.paul
 	{
 		display: none;
 	}
@@ -338,9 +164,27 @@ li
 		width: 433px;
 	}
 }
-
+	
+@media (max-width: 790px) and (min-width: 624px)
+{
+	.container
+	{
+		width: 619px;
+	}
+	
+	.site
+	{
+		height: 667px;
+	}
+}
+	
 @media (max-width: 635px)
 {
+	.container
+	{
+		width: 100%;
+	}
+	
 	.dock
 	{
 		height: 512px;
@@ -365,81 +209,89 @@ li
 	{
 		height: 647px;
 	}
+}
 	
-	.tax
+@media (max-width: 635px) and (min-width: 612px)
+{
+	.container
 	{
-		display: none;
+		height: 540px;
+	}
+}
+	
+@media (max-width: 635px) and (min-width: 475px)
+{
+	.logo
+	{
+		float: right;
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
+	}
+}
+	
+@media (max-width: 618px)
+{
+	.row
+	{
+		height: 520px;
 	}
 	
-	.welcome
+	.container .tasbar
 	{
-		width: 100%;
 		height: 117px;
 	}
 }
-/*
-*End of information dock
-*/
-
-/*
-* Functionality for the picture banner on the home page
-*/
-#banner1{
-      position:relative;
-      width:171px; /* Set your image width */
-      height:130px; /* Set your image height */
+	
+@media (max-width: 611px)
+{
+	.container
+	{
+		height: 560px;
+	}
 }
-#banner1 img{
-      display:none;
-      position:absolute;
-      top:0;
-      left:0;
+	
+@media (max-width: 475px)
+{
+	.logo
+	{
+		margin-left: 75px;
+	}
 }
-#banner1 img.active{
-      display:block;
+	
+@media (max-width: 429px)
+{
+	.container
+	{
+		height: 580px;
+	}
 }
-
-#banner2{
-      position:relative;
-      width:171px; /* Set your image width */
-      height:130px; /* Set your image height */
+	
+@media (max-width: 350px)
+{
+	.container
+	{
+		height: 600px;
+	}
+	
+	.logo
+	{
+		margin-left: 40px;
+	}
 }
-#banner2 img{
-      display:none;
-      position:absolute;
-      top:0;
-      left:0;
-}
-#banner2 img.active{
-      display:block;
-}
-
-#banner3{
-      position:relative;
-      width:171px; /* Set your image width */
-      height:130px; /* Set your image height */
-}
-#banner3 img{
-      display:none;
-      position:absolute;
-      top:0;
-      left:0;
-}
-#banner3 img.active{
-      display:block;
+	
+@media (max-width: 295px)
+{
+	.container
+	{
+		height: 620px;
+	}
 }
 
-#banner4{
-      position:relative;
-      width:171px; /* Set your image width */
-      height:130px; /* Set your image height */
-}
-#banner4 img{
-      display:none;
-      position:absolute;
-      top:0;
-      left:0;
-}
-#banner4 img.active{
-      display:block;
+@media (max-width: 285px)
+{
+	.logo
+	{
+		margin-left: 0px;
+	}
 }

@@ -11,6 +11,28 @@
 	margin-right: auto;
 }
 
+.faqList
+{
+	padding-bottom: 0px;
+}
+
+.footNote
+{
+	margin-top: 160px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.howBold
+{
+	font-weight: bold;
+}
+
+.pageList
+{
+	margin-left: 15px;
+}
+
 .pictures
 {
 	float: left;

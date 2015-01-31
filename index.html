@@ -13,7 +13,7 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 
 		<!-- Custom styles for this template -->
-		<link href="css/test.css" rel="stylesheet">
+		<link href="css/TAS.css" rel="stylesheet">
 
 		<!-- Just for debugging purposes. Don't actually copy this line! -->
 		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -79,8 +79,8 @@
 				});
 				$(".consulting").click(function()
 				{
-					$(".pageContent").load("pages/construction.html");
-					document.cookie = "page = construction";
+					$(".pageContent").load("pages/consulting.html");
+					document.cookie = "page = consulting";
 				});
 				$(".book").click(function()
 				{
@@ -94,13 +94,13 @@
 				});
 				$(".faq").click(function()
 				{
-					$(".pageContent").load("pages/construction.html");
-					document.cookie = "page = construction";
+					$(".pageContent").load("pages/faq.html");
+					document.cookie = "page = faq";
 				});
 				$(".background").click(function()
 				{
-					$(".pageContent").load("pages/construction.html");
-					document.cookie = "page = construction";
+					$(".pageContent").load("pages/background.html");
+					document.cookie = "page = background";
 				});
 				
 				setInterval("swapImages()", 5000);
@@ -119,6 +119,10 @@
 				{
 					$(".pageContent").load("pages/prep.html");
 				}
+				else if(page === "consulting")
+				{
+					$(".pageContent").load("pages/consulting.html");
+				}
 				else if(page === "construction")
 				{
 					$(".pageContent").load("pages/construction.html");
@@ -126,6 +130,14 @@
 				else if(page === "forms")
 				{
 					$(".pageContent").load("pages/forms.html");
+				}
+				else if(page === "faq")
+				{
+					$(".pageContent").load("pages/faq.html");
+				}
+				else if(page === "background")
+				{
+					$(".pageContent").load("pages/background.html");
 				}
 				else
 				{
