@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name = "keywords" content = "Paul M Tyrpak, TAS, Tyrpak, accounting services, accounting, Tyrpak Accounting Services, tax, taxes, finance, financial consulting, consulting">
     
 		<link rel="shortcut icon" href="favicon.ico">
 
@@ -28,15 +29,20 @@
 	<body onload = "loadPage()">
 		<div class = "container">
 			<div class = "panel panel-default site">
-				<div class = "panel-heading row tasbar">
-					<div class = "col-xs-6 col-md-4 paul"></div>
-					<div class = "col-xs-6 col-md-4 logo">
-						<img src = "images/logoTN.png">
+				<div class = "panel-heading tasbar">
+					<!--these divs used to have col-xs-6 col-md-4 as a class -->
+					<div class = "paul">
+						
 					</div>
-					<div class = "col-xs-6 col-md-4 check"></div>
+					<div class = "logo">
+						
+					</div>
+					<div class = "check">
+						
+					</div>
 				</div>
 				<div class = "panel-body dock">
-					<ul class="links">
+					<ul class="cleanList howBold links">
 						<li><span class="home pointer">Home</span></li>
 						<li><span class="prep pointer">Tax Preparation</span></li>
 						<li><span class="payroll pointer">Payroll</span></li>
@@ -50,8 +56,8 @@
 					
 					</div>
 				</div>
-				<p class = "footer">Designed by Anthony Tyrpak</p>
 			</div>
+			<p class = "footer">Designed by Anthony Tyrpak</p>
 		</div>
 		
 		<!-- the javascript -->
@@ -65,26 +71,32 @@
 				$(".home").click(function()
 				{
 					$(".pageContent").load("pages/home.html");
+					$(".container").css("height", "646px");
 					document.cookie = "page = home";
 				});
 				$(".prep").click(function()
 				{
 					$(".pageContent").load("pages/prep.html");
+					$(".container").css("height", "770px");
 					document.cookie = "page = prep";
+					
 				});
 				$(".payroll").click(function()
 				{
 					$(".pageContent").load("pages/construction.html");
+					$(".container").css("height", "646px");
 					document.cookie = "page = construction";
 				});
 				$(".consulting").click(function()
 				{
 					$(".pageContent").load("pages/consulting.html");
+					$(".container").css("height", "646px");
 					document.cookie = "page = consulting";
 				});
 				$(".book").click(function()
 				{
 					$(".pageContent").load("pages/construction.html");
+					$(".container").css("height", "646px");
 					document.cookie = "page = construction";
 				});
 				$(".forms").click(function()
@@ -95,11 +107,13 @@
 				$(".faq").click(function()
 				{
 					$(".pageContent").load("pages/faq.html");
+					$(".container").css("height", "1240px");
 					document.cookie = "page = faq";
 				});
 				$(".background").click(function()
 				{
 					$(".pageContent").load("pages/background.html");
+					$(".container").css("height", "690px");
 					document.cookie = "page = background";
 				});
 				
@@ -114,18 +128,22 @@
 				if(page === "home")
 				{
 					$(".pageContent").load("pages/home.html");
+					$(".container").css("height", "646px");
 				}
 				else if(page === "prep")
 				{
 					$(".pageContent").load("pages/prep.html");
+					$(".container").css("height", $(".pageContent").height());
 				}
 				else if(page === "consulting")
 				{
 					$(".pageContent").load("pages/consulting.html");
+					$(".container").css("height", "646px");
 				}
 				else if(page === "construction")
 				{
 					$(".pageContent").load("pages/construction.html");
+					$(".container").css("height", "646px");
 				}
 				else if(page === "forms")
 				{
@@ -134,14 +152,17 @@
 				else if(page === "faq")
 				{
 					$(".pageContent").load("pages/faq.html");
+					$(".container").css("height", "1240px");
 				}
 				else if(page === "background")
 				{
 					$(".pageContent").load("pages/background.html");
+					$(".container").css("height", "690px");
 				}
 				else
 				{
 					$(".pageContent").load("pages/home.html");
+					$(".container").css("height", "646px");
 				}
 			}
 			

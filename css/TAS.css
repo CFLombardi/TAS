@@ -17,9 +17,7 @@ li
 .check
 {
 	background: url("../images/check.png");
-	float: right;
-	margin-top: 0px;
-	top: 0px;
+	display: inline-block;
 	
 	width: 217px;
 	height: 117px;
@@ -34,21 +32,17 @@ li
 {
 	background-color: #fba126;
 	margin-top: 15px;
-	margin-bottom: 15px;
-	padding-left: 0px;
-	padding-right: 0px;
+	padding: 0px;
 }
 
 .dock
 {
-	margin-bottom: 0px;
 	padding: 5px;
-	
-	height: 535px;
 }
 
 .footer
 {
+	background-color: #fba126;
 	font-size: 10px;
 	padding: 0px;
 	margin: 0px;
@@ -57,27 +51,33 @@ li
 	width: 100%;
 }
 
+.howBold
+{
+	font-weight: bold;
+}
+
 .links
 {
 	background-color: #00349A;
 	border: 0px;
 	border-radius: 5px;
 	color: white;
+	display: inline-block;
 	font-size: 12pt;
-	font-weight: bold;
-	float: left;
-	list-style-type: none;
-	margin-bottom: 0px;
 	padding-top: 25px;
 	padding-left: 25px;
+	vertical-align: top;
+	
 	width: 171px;
-	height: 520px;
+	height: 520px;	
 }
 
 .logo
 {
-	margin-top: 25px;
-	margin-left: 5px;
+	background: url("../images/logoTN.png");
+	display: inline-block;
+	margin-bottom: 10px;
+	margin-right: 44px;
 	
 	width: 188px;
 	height: 84px;
@@ -85,18 +85,18 @@ li
 
 .pageContent
 {
-	float: right;
-	width: 604px;
+	display: inline-block;
+	
+	width: 604px;	
 }
 
 .paul
 {
 	background: url("../images/PaulTyrpak.png");
-	float:left;
-	margin-top: 25px;
+	display: inline-block;
 	margin-left: 15px;
-	margin-right: 25px;
-	
+	margin-bottom: 20px;
+	margin-right: 45px;
 	
 	width: 273px;
 	height: 73px;
@@ -113,7 +113,8 @@ li
 	border: 0px;
 	margin-bottom: 0px;
 	
-	height: 647px;
+	width: inherit;
+	height: inherit;
 }
 
 .tasbar
@@ -135,11 +136,6 @@ li
 	{
 		width: 790px;
 	}
-	
-	.site
-	{
-		height: 667px;
-	}
 }
 	
 @media (max-width: 790px)
@@ -151,7 +147,14 @@ li
 	
 	.logo
 	{
-		margin-left: 185px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.pageContent
+	{
+		width: 433px;
 	}
 	
 	.paul
@@ -159,9 +162,9 @@ li
 		display: none;
 	}
 	
-	.pageContent
+	.tasbar
 	{
-		width: 433px;
+		padding-top: 25px;
 	}
 }
 	
@@ -171,11 +174,6 @@ li
 	{
 		width: 619px;
 	}
-	
-	.site
-	{
-		height: 667px;
-	}
 }
 	
 @media (max-width: 635px)
@@ -183,6 +181,7 @@ li
 	.container
 	{
 		width: 100%;
+		/*height: 647px;*/
 	}
 	
 	.dock
@@ -204,29 +203,13 @@ li
 		width: 100%;
 		height: 112px;
 	}
-	
-	.site
-	{
-		height: 647px;
-	}
 }
 	
 @media (max-width: 635px) and (min-width: 612px)
 {
 	.container
 	{
-		height: 540px;
-	}
-}
-	
-@media (max-width: 635px) and (min-width: 475px)
-{
-	.logo
-	{
-		float: right;
-		margin-left: auto;
-		margin-right: auto;
-		width: 70%;
+		/*height: 540px;*/
 	}
 }
 	
@@ -247,15 +230,7 @@ li
 {
 	.container
 	{
-		height: 560px;
-	}
-}
-	
-@media (max-width: 475px)
-{
-	.logo
-	{
-		margin-left: 75px;
+		/*height: 560px;*/
 	}
 }
 	
@@ -263,7 +238,7 @@ li
 {
 	.container
 	{
-		height: 580px;
+		/*height: 580px;*/
 	}
 }
 	
@@ -271,12 +246,7 @@ li
 {
 	.container
 	{
-		height: 600px;
-	}
-	
-	.logo
-	{
-		margin-left: 40px;
+		/*height: 600px;*/
 	}
 }
 	
@@ -284,14 +254,6 @@ li
 {
 	.container
 	{
-		height: 620px;
-	}
-}
-
-@media (max-width: 285px)
-{
-	.logo
-	{
-		margin-left: 0px;
+		/*height: 620px;*/
 	}
 }

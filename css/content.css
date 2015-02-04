@@ -23,11 +23,6 @@
 	text-align: center;
 }
 
-.howBold
-{
-	font-weight: bold;
-}
-
 .pageList
 {
 	margin-left: 15px;
@@ -36,6 +31,7 @@
 .pictures
 {
 	float: left;
+	margin-left: 0px;
 	padding-left: 0px; /* used to be 5px */
 	
 	width: 171px;
@@ -65,6 +61,7 @@
 .welcome
 {
 	float: right;
+	margin-left: 5px;
 	padding-left: 0px; /* used to be 10px */
 	padding-right: 0px;
 	
