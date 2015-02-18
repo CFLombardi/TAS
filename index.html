@@ -32,10 +32,10 @@
 				<div class = "panel-heading tasbar">
 					<!--these divs used to have col-xs-6 col-md-4 as a class -->
 					<div class = "paul">
-						
+					
 					</div>
 					<div class = "logo">
-						
+						<img src = "images/logoTN.png">
 					</div>
 					<div class = "check">
 						
@@ -68,101 +68,179 @@
 			
 			$(document).ready(function()
 			{
+				//These functions will proc when the user clicks on a link
 				$(".home").click(function()
 				{
-					$(".pageContent").load("pages/home.html");
-					$(".container").css("height", "646px");
-					document.cookie = "page = home";
+					$(".pageContent").load("pages/home.html", function()
+					{
+						var newHeight = $(".tasbar").height() + $(".dock").height();
+					
+						$(".container").css("height", newHeight);		
+					});
+					document.cookie = "page = home";					
 				});
 				$(".prep").click(function()
 				{
-					$(".pageContent").load("pages/prep.html");
-					$(".container").css("height", "770px");
-					document.cookie = "page = prep";
+					$(".pageContent").load("pages/prep.html", function()
+					{
+						var newHeight = $(".tasbar").height() + $(".dock").height();
 					
+						$(".container").css("height", newHeight);
+					});
+					document.cookie = "page = prep";					
 				});
 				$(".payroll").click(function()
 				{
-					$(".pageContent").load("pages/construction.html");
-					$(".container").css("height", "646px");
+					$(".pageContent").load("pages/construction.html", function()
+					{
+						var newHeight = $(".tasbar").height() + $(".dock").height();
+					
+						$(".container").css("height", newHeight);
+					});
 					document.cookie = "page = construction";
 				});
 				$(".consulting").click(function()
 				{
-					$(".pageContent").load("pages/consulting.html");
-					$(".container").css("height", "646px");
+					$(".pageContent").load("pages/consulting.html", function()
+					{
+						var newHeight = $(".tasbar").height() + $(".dock").height();
+					
+						$(".container").css("height", newHeight);
+					});
 					document.cookie = "page = consulting";
 				});
 				$(".book").click(function()
 				{
-					$(".pageContent").load("pages/construction.html");
-					$(".container").css("height", "646px");
+					$(".pageContent").load("pages/construction.html", function()
+					{
+						var newHeight = $(".tasbar").height() + $(".dock").height();
+					
+						$(".container").css("height", newHeight);
+					});
 					document.cookie = "page = construction";
 				});
 				$(".forms").click(function()
 				{
-					$(".pageContent").load("pages/forms.html");
+					$(".pageContent").load("pages/forms.html", function()
+					{
+						var newHeight = $(".tasbar").height() + $(".dock").height();
+					
+						$(".container").css("height", newHeight);
+					});
 					document.cookie = "page = forms";
 				});
 				$(".faq").click(function()
 				{
-					$(".pageContent").load("pages/faq.html");
-					$(".container").css("height", "1240px");
+					$(".pageContent").load("pages/faq.html", function()
+					{
+						var newHeight = $(".tasbar").height() + $(".dock").height();
+					
+						$(".container").css("height", newHeight);
+					});
 					document.cookie = "page = faq";
 				});
 				$(".background").click(function()
 				{
-					$(".pageContent").load("pages/background.html");
-					$(".container").css("height", "690px");
+					$(".pageContent").load("pages/background.html", function()
+					{
+						var newHeight = $(".tasbar").height() + $(".dock").height();
+					
+						$(".container").css("height", newHeight);
+					});
 					document.cookie = "page = background";
 				});
 				
+				//Detecting the window being resized
+				$(window).resize(function()
+				{
+					var newHeight = $(".tasbar").height() + $(".dock").height();
+					
+					$(".container").css("height", newHeight);
+				});
+				
+				//Timed interval to change the images on the main page
 				setInterval("swapImages()", 5000);
 			});
 			
+			
+			
 			function loadPage()
 			{
+				//This function will proc when the user refreshes the page
 				var cookie = document.cookie;
 				var page = cookie.substring(5, cookie.length);
 				
 				if(page === "home")
 				{
-					$(".pageContent").load("pages/home.html");
-					$(".container").css("height", "646px");
+					$(".pageContent").load("pages/home.html", function()
+					{
+						var newHeight = $(".tasbar").height() + $(".dock").height();
+					
+						$(".container").css("height", newHeight);
+					});
 				}
 				else if(page === "prep")
 				{
-					$(".pageContent").load("pages/prep.html");
-					$(".container").css("height", $(".pageContent").height());
+					$(".pageContent").load("pages/prep.html", function()
+					{
+						var newHeight = $(".tasbar").height() + $(".dock").height();
+					
+						$(".container").css("height", newHeight);
+					});
 				}
 				else if(page === "consulting")
 				{
-					$(".pageContent").load("pages/consulting.html");
-					$(".container").css("height", "646px");
+					$(".pageContent").load("pages/consulting.html", function()
+					{
+						var newHeight = $(".tasbar").height() + $(".dock").height();
+					
+						$(".container").css("height", newHeight);
+					});
 				}
 				else if(page === "construction")
 				{
-					$(".pageContent").load("pages/construction.html");
-					$(".container").css("height", "646px");
+					$(".pageContent").load("pages/construction.html", function()
+					{
+						var newHeight = $(".tasbar").height() + $(".dock").height();
+					
+						$(".container").css("height", newHeight);
+					});
 				}
 				else if(page === "forms")
 				{
-					$(".pageContent").load("pages/forms.html");
+					$(".pageContent").load("pages/forms.html", function()
+					{
+						var newHeight = $(".tasbar").height() + $(".dock").height();
+					
+						$(".container").css("height", newHeight);
+					});
 				}
 				else if(page === "faq")
 				{
-					$(".pageContent").load("pages/faq.html");
-					$(".container").css("height", "1240px");
+					$(".pageContent").load("pages/faq.html", function()
+					{
+						var newHeight = $(".tasbar").height() + $(".dock").height();
+					
+						$(".container").css("height", newHeight);
+					});
 				}
 				else if(page === "background")
 				{
-					$(".pageContent").load("pages/background.html");
-					$(".container").css("height", "690px");
+					$(".pageContent").load("pages/background.html", function()
+					{
+						var newHeight = $(".tasbar").height() + $(".dock").height();
+					
+						$(".container").css("height", newHeight);
+					});
 				}
 				else
 				{
-					$(".pageContent").load("pages/home.html");
-					$(".container").css("height", "646px");
+					$(".pageContent").load("pages/home.html", function()
+					{
+						var newHeight = $(".tasbar").height() + $(".dock").height();
+					
+						$(".container").css("height", newHeight);
+					});
 				}
 			}
 			
