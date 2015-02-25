@@ -37,7 +37,7 @@ li
 
 .dock
 {
-	padding: 5px 5px 0px;
+	padding: 0px 5px 0px;
 }
 
 .footer
@@ -64,7 +64,8 @@ li
 	color: white;
 	display: inline-block;
 	font-size: 12pt;
-	margin: 0px;
+	margin-top: 5px;
+	margin-bottom: 0px;
 	padding-top: 25px;
 	padding-left: 25px;
 	vertical-align: top;
@@ -88,6 +89,7 @@ li
 .pageContent
 {
 	display: inline-block;
+	margin-top: 5px;
 	
 	width: 604px;	
 }
@@ -116,7 +118,6 @@ li
 	margin-bottom: 0px;
 	
 	width: inherit;
-	height: inherit;
 }
 
 .tasbar
@@ -190,6 +191,7 @@ li
 	
 	.links
 	{
+		padding-left: 0px;
 		text-align: center;
 		
 		width: 100%;
