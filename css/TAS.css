@@ -56,6 +56,11 @@ li
 	font-weight: bold;
 }
 
+.justified
+{
+	text-align: justify;
+}
+
 .links
 {
 	background-color: #00349A;

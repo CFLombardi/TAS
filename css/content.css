@@ -1,3 +1,19 @@
+.backgroundPage
+{
+	padding: 20px 0px 0px;
+	text-align: center;
+}
+
+.backgroundTitle
+{
+	margin-bottom: 0px;
+}
+
+.btn-info
+{
+	width: 113px;
+}
+
 .caption
 {
 	text-align: center;
@@ -9,6 +25,12 @@
 	margin-top: 15%;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.faqPage
+{
+	margin: 0px 30px;
+	padding-bottom: 10px;
 }
 
 .faqList
@@ -26,8 +48,9 @@
 
 .pageList
 {
-	margin-left: 15px;
-	margin-bottom: 0px;
+	margin: 0px 15px;
+	padding: 0px 15px;
+	text-align: justify;
 }
 
 .pictures
@@ -40,12 +63,19 @@
 	height: 520px;
 }
 
+.question
+{
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
 .services
 {
 	background-color: #00349A;
 	border-radius: 5px;
 	color: #FFFFFF;
-	margin-top: 0px;
+	
 }
 
 .textWelcome
@@ -57,7 +87,8 @@
 .title
 {
 	margin: 0px;
-	padding: 10px;
+	padding-top: 10px;
+	text-align: center;
 }
 
 .welcome
