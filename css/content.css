@@ -1,12 +1,7 @@
-.backgroundPage
-{
-	padding: 20px 0px 0px;
-	text-align: center;
-}
-
 .backgroundTitle
 {
 	margin-bottom: 0px;
+	padding-top: 10px;
 }
 
 .btn-info
@@ -15,6 +10,11 @@
 }
 
 .caption
+{
+	text-align: center;
+}
+
+.centerPage
 {
 	text-align: center;
 }
@@ -53,6 +53,12 @@
 	text-align: justify;
 }
 
+.pageTitle
+{
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+
 .pictures
 {
 	float: left;
@@ -63,19 +69,17 @@
 	height: 520px;
 }
 
-.question
-{
-	font-weight: bold;
-	margin-top: 20px;
-	margin-bottom: 0px;
-}
-
 .services
 {
 	background-color: #00349A;
 	border-radius: 5px;
 	color: #FFFFFF;
 	
+}
+
+.servicePage
+{
+	padding: 20px 30px 10px;
 }
 
 .textWelcome
