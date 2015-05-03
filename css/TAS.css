@@ -1,36 +1,35 @@
 /*
 *HTML adjustments
 */
-body 
-{
+body {
 	background-color: black;
 }
 
-li
-{
+li {
 	padding-bottom: 25px;
 }
 
-p
-{
+p {
 	margin-bottom: 20px;
 }
 
 /*
 *Custom classes
 */
-.check
-{
-	background: url("../images/check.png");
-	display: inline-block;
-	
-	width: 217px;
-	height: 117px;
+.check {
+	float: right;
 }
 
 .cleanList
 {
 	list-style-type: none;
+}
+
+.collapseLinks {
+	background-color: #00349A;
+	color: white;
+	
+	width: 171px;
 }
 
 .container
@@ -84,40 +83,41 @@ p
 	height: 520px;	
 }
 
-.logo
-{
-	
-	display: inline-block;
-	margin-top: 25px;
-	margin-right: 44px;
-	vertical-align: top;
-	
-	width: 188px;
-	height: 84px;
+.linksButton {
+	vertical-align: middle;
 }
 
-.pageContent
+.logo {
+	margin-top: 25px;
+	margin-left: 45px;
+}
+
+.icon-bar
 {
+	background-color: #FFFFFF;
+}
+
+.navbar-toggle {
+	background-color: #00349A;
+}
+
+.noScroll
+{
+	overflow: hidden !important;
+}
+
+.pageContent {
 	display: inline-block;
 	margin-top: 5px;
 	
 	width: 604px;	
 }
 
-.paul
-{
-	background: url("../images/PaulTyrpak.png");
-	display: inline-block;
-	margin-left: 15px;
-	margin-bottom: 20px;
-	margin-right: 45px;
-	
-	width: 273px;
-	height: 73px;
+.paul {
+	margin-top: 25px;
 }
 
-.pointer
-{
+.pointer {
 	cursor: pointer;
 }
 
@@ -130,8 +130,7 @@ p
 	width: inherit;
 }
 
-.tasbar
-{
+.tasbar {
 	background: url("../images/bannerBG.jpg");
 	border: 0px;
 	margin: 0px;
@@ -139,6 +138,20 @@ p
 	
 	width: inherit;
 	height: 117px;
+}
+
+.tasLeft {
+	height: inherit;
+}
+
+.tasMiddle {
+	height: inherit;
+}
+
+.tasRight {
+	padding-right: 0px !important;
+
+	height: inherit;
 }
 
 /*
@@ -150,37 +163,35 @@ p
 	{
 		width: 790px;
 	}
-	
-	.pageContent
-	{
-		
-	}
 }
 	
-@media (max-width: 790px)
-{
-	.check
-	{
-		display: none;
+@media (max-width: 790px) {	
+	.logo {
+		margin-left: 15%;
 	}
-	
-	.logo
-	{
-		display: block;
-		margin-top: 0px;
-		margin-left: auto;
-		margin-right: auto;
-		padding-top: 25px;
-	}
-	
 	.pageContent
 	{
 		width: 433px;
 	}
 	
-	.paul
+	.tasLeft
 	{
 		display: none;
+	}
+	
+	.tasMiddle {
+		margin-top: 0px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 25%;
+		
+		width: inherit;
+		
+	}
+	
+	.tasRight
+	{
+		display: none
 	}
 }
 	
@@ -191,9 +202,26 @@ p
 		width: 619px;
 	}
 }
+
+@media (min-width: 635px)
+{
+	.navbar-collapse.collapse
+	{
+		display: none !important;
+	}
+	
+	.navbar-toggle
+	{
+		display: none !important;
+	}
+}
 	
 @media (max-width: 635px)
 {
+	.check {
+		display: none;
+	}
+	
 	.container
 	{
 		width: 100%;
@@ -201,6 +229,7 @@ p
 	
 	.links
 	{
+		display: none;
 		padding-left: 0px;
 		text-align: center;
 		
@@ -208,10 +237,32 @@ p
 		height: 395px;
 	}
 	
+	.logo
+	{
+		float: right;
+	}
+	
+	.navbar-toggle
+	{
+		display: inline-block;
+	}
+	
 	.pageContent
 	{
 		padding-top: 5px;
 		
 		width: 100%;
+	}
+	
+	.tasMiddle {
+		padding-left: 45px;
+		padding-right: 0px;
+	
+		width: 50%;
+	}
+	
+	.tasRight {
+		display: block;
+		padding-left: 0px !important;
 	}
 }
