@@ -36,31 +36,30 @@
 					</div>
 					<div class = "col-xs-6 col-sm-4 col-md-4 tasMiddle">
 						<img class = "logo" src = "images/logoTN.png">
-					</div>
-					<div class = "col-xs-6 col-sm-4 col-md-4 tasRight">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<button type="button" class="navbar-toggle linksButton" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
+					</div>
+					<div class = "col-xs-6 col-sm-4 col-md-4 tasRight">
 						<img class="check" src = "images/check.png">
 					</div>					
 				</div>
 				<div class="collapse navbar-collapse noScroll" id="bs-example-navbar-collapse-1">
-						<ul class = "nav navbar-nav navbar-right collapseLinks">
-							<li><span class="home pointer">Home</span></li>
-							<li><span class="prep pointer">Tax Preparation</span></li>
-							<li><span class="payroll pointer">Payroll</span></li>
-							<li><span class="consulting pointer">Consulting</span></li>
-							<li><span class="book pointer">Bookkeeping</span></li>
-							<li><span class="forms pointer">Tax Forms</span></li>
-							<li><span class="faq pointer">FAQ</span></li>
-							<li><span class="background pointer">Background</span></li>
-						</ul>
-					</div>
+					<ul class = "nav navbar-nav navbar-right howBold collapseLinks">
+						<li><span id="home" class="home pointer">Home</span></li>
+						<li><span id="prep" class="prep pointer">Tax Preparation</span></li>
+						<li><span id="payroll" class="payroll pointer">Payroll</span></li>
+						<li><span id="consulting" class="consulting pointer">Consulting</span></li>
+						<li><span id="book" class="book pointer">Bookkeeping</span></li>
+						<li><span id="forms" class="forms pointer">Tax Forms</span></li>
+						<li><span id="faq" class="faq pointer">FAQ</span></li>
+						<li><span id="background" class="background pointer">Background</span></li>
+					</ul>
+				</div>
 				<div class = "panel-body dock">
-					
 					<ul class="cleanList howBold links">
 						<li><span class="home pointer">Home</span></li>
 						<li><span class="prep pointer">Tax Preparation</span></li>
@@ -126,6 +125,11 @@
 				{
 					$(".pageContent").load("pages/background.html");
 					document.cookie = "page = background";
+				});
+				
+				$(".collapseLinks li").click(function() {
+					console.log("hi");
+					$(".navbar-collapse").removeClass("in");
 				});
 				
 				//Timed interval to change the images on the main page
