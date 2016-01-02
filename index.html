@@ -82,9 +82,11 @@
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		
-		<script type = "text/javascript">				
+		<script type = "text/javascript">
 			$(document).ready(function()
-			{
+			{				
+				$(".navbar-collapse").addClass("in");
+				
 				//These functions will proc when the user clicks on a link
 				$(".home").click(function()
 				{
@@ -94,7 +96,7 @@
 				$(".prep").click(function()
 				{
 					$(".pageContent").load("pages/prep.html");
-					document.cookie = "page = prep";					
+					document.cookie = "page = prep";
 				});
 				$(".payroll").click(function()
 				{
@@ -128,8 +130,12 @@
 				});
 				
 				$(".collapseLinks li").click(function() {
-					console.log("hi");
-					$(".navbar-collapse").removeClass("in");
+					var cookie = document.cookie;
+					var page = cookie.substring(5, cookie.length);
+					
+					if(page != "home") {
+						$(".navbar-collapse").removeClass("in");
+					}
 				});
 				
 				//Timed interval to change the images on the main page
